@@ -22,8 +22,7 @@ async function bootstrap() {
             'http://localhost:3000', // dev
             'http://localhost:5000', // dev
             'http://localhost:5500', // dev
-            'https://barbarossa.pp.ua', // prod
-            'https://studio.apollographql.com', // stage
+            'https://nova-massage.pp.ua', // prod
         ],
         credentials: true,
     });

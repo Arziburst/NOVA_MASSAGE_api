@@ -4,23 +4,22 @@ npm i
 
 .env {
     APP_NAME
-    NODE_ENV
     PORT
 }
 
 npm run build
 
-docker build -t arziburst/barbarossa_graphql .
+docker build -t arziburst/norkamasagerka .
 
-docker push arziburst/barbarossa_graphql
+docker push arziburst/norkamasagerka_api
 
 <!-- droplet -->
 
-docker pull arziburst/barbarossa_graphql
+docker pull arziburst/norkamasagerka_api
 
-docker tag arziburst/barbarossa_graphql dokku/graphql
+docker tag arziburst/norkamasagerka_api dokku/api
 
-dokku tags:deploy graphql
+dokku tags:deploy api
 
 <!-- Dokku fast docs -->
 dokku [module]:[report|help] 
