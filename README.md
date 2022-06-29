@@ -9,7 +9,7 @@ npm i
 
 npm run build
 
-docker build -t arziburst/norkamasagerka .
+docker build -t arziburst/norkamasagerka_api .
 
 docker push arziburst/norkamasagerka_api
 
