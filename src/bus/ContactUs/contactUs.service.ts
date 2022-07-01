@@ -6,7 +6,7 @@ import axios from 'axios';
 import { ContactUsInput } from './contactUs.inputs';
 
 const TELEGRAM_API_URL = 'https://api.telegram.org/bot5361474341:AAHiYRHTmk_0DoYdmmXpvEnGkW488ZkPmQA';
-const TELEGRAM_GROUP_ID = '-751849519';
+const TELEGRAM_GROUP_ID = '-1001653168832';
 
 @Injectable()
 export class ContactUsService {
