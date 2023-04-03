@@ -10,7 +10,7 @@ import { ContactUsModule } from './bus/ContactUs/contactUs.module';
 @Module({
     imports: [
         ThrottlerModule.forRoot({
-            ttl:   1000 * 60 * 60 * 12,
+            ttl:   60 * 60 * 12,
             limit: 1,
         }),
         ConfigModule.forRoot(),
