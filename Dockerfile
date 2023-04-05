@@ -1,12 +1,17 @@
-FROM node:12.18.2-alpine
+FROM node:14.15.1-alpine3.12
 
 WORKDIR /usr/src/app
 
-COPY ./package.json /usr/src/app/package.json
-COPY ./dist /usr/src/app
+COPY package.json .
+COPY dist .
 
-RUN npm i --production
-RUN apk add curl
+RUN apk update && \
+    apk upgrade && \
+    npm install --only=production && \
+    apk add --no-cache curl
+
+ENV NODE_ENV production
+ENV DATABASE_URL postgres://<user>:<password>@<host>:<port>/<database>
 
 EXPOSE 4000
 
